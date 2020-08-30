@@ -93,7 +93,7 @@ pool_ratios: 0.4 #Pooling ratio to be used in the hPool layers
 
 ```
 
-### Results
+### Simulated data results
 
 Our model achieves the following performance on the simulated brain graph datasets:
 
