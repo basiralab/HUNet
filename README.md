@@ -24,7 +24,7 @@ Recently, there has been a surge of interest in deep graph neural networks,
     demonstrating both scalability and generalizability. We evaluated our proposed framework on the 
     ABIDE preprocessed dataset (http://preprocessed-connectomes-project.org/abide/) and a subset of the ADNI GO public dataset (http://adni.loni.usc.edu/).
 
-![HUNet Architecture](docs/architecture.png)
+![HUNet Architecture](HUNet.png)
 ## Demo
 ### Requirements
 HUNet is coded in Python 3. A GPU and CUDA 10.2 is required to run this code.
