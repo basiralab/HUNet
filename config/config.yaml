@@ -1,0 +1,28 @@
+
+# data path
+data_type: simulated             # adni or functional
+
+# model parameters
+model: HUNET              # model name
+k_construct_nn: 4      # for data without inherent graph structure
+n_stack: 1           # Number of stacked HU-Nets
+layer_spec: [64] # Reduced feature dimension
+hunet_depth : 3 #Depth of individual HU-Nets
+pool_ratios: 0.5 #Pooling ratio to be used in the hPool layers
+
+#Data simulation with 2 classes
+mu1: 1
+sigma1: 0.2
+mu2: 0.9
+sigma2: 0.21
+
+# train
+max_epoch: 100
+milestones: [200]
+gamma: 0.1
+lr: 0.01
+drop_out: 0.5 # Dropout rate of the dropout layers (0.5 for adni experiment 0.4 for functional experiment)
+print_freq: 10
+weight_decay: 0.0005
+decay_step: 200
+decay_rate: 0.7
