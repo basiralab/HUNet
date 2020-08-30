@@ -4,11 +4,10 @@ Deep hypergraph U-Net for brain graph embedding and classification code by Mert 
 Recently, there has been a surge of interest in deep graph neural networks,
   given their remarkable capacity to model the deeply nonlinear relationship between data samples (i.e.  connectomes) 
   rooted in message passing, aggregation, and composition rules between node connectomic features.
-  However, a major limitation of current deep graph embedding architectures is that they 
+  However, a major limitation of existing deep graph embedding architectures is that they 
   are unable to capture many-to-many (i.e., high-order) relationships between samples, hence the learned feature embeddings 
   only consider node-to-node edges in the population graph. Our framework aims to infer and aggregate node embeddings while exploring the 
-  global high-order structure present between subsets of data samples, 
-  becoming more gnostic of real data complexity.  
+  global high-order structure present between subsets of data samples, becoming more gnostic of real data complexity.  
 
 ## Details of the proposed HUNet framework
 **A)** Each brain network *S<sub>i</sub>* of subject *i* is encoded in a connectivity matrix,
