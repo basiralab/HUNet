@@ -16,7 +16,7 @@ Recently, there has been a surge of interest in deep graph neural networks,
   **B)** Using *X*, we generate the normalized hypergraph connectivity matrix *H*. *H* and *X* are used 
   as inputs for the proposed HUNet architecture, stacking our proposed hypergraph pooling (hPool) 
   and unpooling (hUnpool) layers with hypergraph convolution layers. Connectivity information of 
-  the removed nodes at hPool layer at HUNet level *d* are transferred to the hUnpool layer at the same level to be used 
+  the removed nodes at hPool layer at HUNet level *d* is transferred to the hUnpool layer at the same level to be used 
   when up-sampling *X* and restoring *H*. Outputs of the HUNet are the learned feature embeddings which can be used for 
   the target learning task.  Experimental results and comparisons with the state-of-the-art methods demonstrate that HUNet
    can outperform state-of-the art geometric graph and hypergraph data embedding techniques with a gain of *4-14%* in classification accuracy,
@@ -39,7 +39,7 @@ The number of class 1 brain graphs, the number of class 2 brain graphs and the n
 Also, the user needs to specify the normal distribution parameters (the mean mu and the standard deviation sigma) in config.yaml file.
 To train and evaluate the HUNet code on other datasets, you need to provide:
 <ul>
-<li> A numpy array of size (N × C) stacking the feature vectors of the subjects. N denotes the total number of subjects and C denotes the input feature dimension.</li>
+<li> A NumPy array of size (N × C) stacking the feature vectors of the subjects. N denotes the total number of subjects and C denotes the input feature dimension.</li>
 <li> A vector of size N stacking the training labels.</li>
 <li> idx_trains: the indices of the training samples.</li>
 <li> idx_vals: the indices of the validation samples.</li>
@@ -48,7 +48,7 @@ To train and evaluate the HUNet code on other datasets, you need to provide:
 
 ### Train and test HUNet
 
-To evaluate our framework, we use 5 fold cross validation on %80 of the data and select the 2 models with the lowest 
+To evaluate our framework, we use 5 fold cross-validation on %80 of the data and select the 2 models with the lowest 
 value loss and highest validation accuracy. We then evaluate these models on the test set consisting of the remaining %20 and report the testing accuracy.
 
 To test our code, you can run: train_and_evaluate.py
@@ -81,7 +81,7 @@ pool_ratios: 0.5 #Pooling ratio to be used in the hPool layers
 ```
 ### Large-scale brain graph dataset simulation
 To simulate a large-scale brain graph dataset, we set the number of class 1 and class 2 brain graphs as 250 with the number of ROI's as 120. 
-To train and evaluate HUNet on a simulated large-scale brain graph dataset, we increase the depth of the HUNet and decrease the pooling ratio, meaning that we keep less nodes in each HUNet level.
+To train and evaluate HUNet on a simulated large-scale brain graph dataset, we increase the depth of the HUNet and decrease the pooling ratio, meaning that we keep fewer nodes in each HUNet level.
 ```
 # model parameters
 model: HUNET              # model name
