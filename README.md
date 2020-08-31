@@ -46,7 +46,7 @@ To train and evaluate the HUNet code on other datasets, you need to provide:
 <li> idx_test: the indices of the test samples.</li>
 </ul>
 
-### Train and test BGSR
+### Train and test HUNet
 
 To evaluate our framework, we use 5 fold cross validation on %80 of the data and select the 2 models with the lowest 
 value loss and highest validation accuracy. We then evaluate these models on the test set consisting of the remaining %20 and report the testing accuracy.
