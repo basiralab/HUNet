@@ -102,7 +102,7 @@ Our model achieves the following performance on the simulated brain graph datase
 | Large-scale   |     76%         |      79%       |      73%       |
 | Small-scale   |     88%         |      80%       |      100%       |
 
-# Please cite the following paper when using BrainNet-ML-ToolBox:
+# Please cite the following paper when using HUNet:
 
 ```
 @article{Lostar2020,
