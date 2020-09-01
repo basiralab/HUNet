@@ -102,3 +102,16 @@ Our model achieves the following performance on the simulated brain graph datase
 | Large-scale   |     76%         |      79%       |      73%       |
 | Small-scale   |     88%         |      80%       |      100%       |
 
+# Please cite the following paper when using BrainNet-ML-ToolBox:
+
+```
+@article{Lostar2020,
+  title={Deep Hypergraph U-Net for Brain Graph Embedding and Classification},
+  author={Lostar, Mert and and Rekik, Islem},
+  journal={arXiv preprint arXiv:2008.13118},
+  year={2020}
+}
+
+```
+Paper link on arXiv:
+https://arxiv.org/pdf/2008.13118.pdf
